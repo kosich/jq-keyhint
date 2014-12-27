@@ -1,0 +1,24 @@
+{
+  "name": "jq-keyhint",
+  "version": "0.0.1",
+  "authors": [
+    "kosich <kosich@users.noreply.github.com>"
+  ],
+  "description": "~",
+  "main": "jquery.keyhint.js",
+  "keywords": [
+    "jQuery plugin"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

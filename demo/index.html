@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../jquery.keyhint.js"></script>
+        <script>
+            $(function() {
+                $("#main").keyHint();
+            });
+        </script>
+        <style>
+            #main{
+                padding: 1em;
+                width: 400px;
+                margin: 0 auto;
+            }
+            input, textarea{
+                width: 100%;
+                box-sizing: border-box;
+                margin: 5px 0;
+            }
+            #keys{
+                text-align: center;
+            }
+            #keys span{
+                display: inline-block;
+                font-weight: bold;
+                margin: 0 5px;
+                padding: .5em 1em;
+                background-color: #fafafa;
+                color: gray;
+                border-radius: 2px;
+                transition: 0.1s;
+            }
+            #keys .hinted{
+                color: #fff;
+                text-shadow: 0 0 1px #12304D;
+                box-shadow: 0 0 1px #FFF;
+                background-color: #85C3DF;
+                transition: 0s;
+            }
+            </style>
+    </head>
+    <body>
+        <div id='main'>
+            <input autofocus />
+            <textarea ></textarea>
+            <div id='keys'>
+                <span data-keyhint='shift'>shift</span>
+                <span data-keyhint='ctrl'>ctrl</span>
+                <span data-keyhint='alt'>alt</span>
+                <span data-keyhint='meta'>meta</span>
+            </div>
+        </div>
+
+
+    </body>
+</html>
