@@ -46,11 +46,8 @@
             function keyhandler (state){
                 return function( e ){
                     var keyName = KEYCODES[ e.keyCode ];
-
-                    console.log(e ,keyName, ' - ', e.keyCode);
-                    if ( !keyName ){
+                    if ( !keyName )
                         return true;
-                    }
 
                     var el = ke[ keyName ];
                     if ( el ) {
@@ -67,7 +64,6 @@
     // preventing against multiple instantiations
     $.fn[ pluginName ] = function ( options ) {
         if ( !$.data( this, "plugin_" + pluginName ) ) {
-            console.log('applying to', this);
             $.data( this, "plugin_" + pluginName, new KeyHint( this, options ) );
         }
         return this;

@@ -56,7 +56,6 @@
     // preventing against multiple instantiations
     $.fn[ pluginName ] = function ( options ) {
         if ( !$.data( this, "plugin_" + pluginName ) ) {
-            console.log('applying to', this);
             $.data( this, "plugin_" + pluginName, new KeyHint( this, options ) );
         }
         return this;
